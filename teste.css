@@ -1,0 +1,114 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ======= CABEÇALHO ======= */
+header {
+  background-color: #000000;
+  border-bottom: 1px solid #ffffff;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.user-icon {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1e3a8a;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.user-icon img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+/* ======= CONTEÚDO ======= */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  background-color: #1e3a8a;
+  border-radius: 25px;
+  padding: 5px;
+  width: 60%;
+  max-width: 500px;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+.chat-input input::placeholder {
+  color: #cbd5e1;
+}
+
+.chat-input button {
+  background-color: white;
+  color: #1e3a8a;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+  background-color: #3b82f6;
+  color: white;
+}
